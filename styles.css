@@ -46,6 +46,7 @@ main {
 header {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px 20px;
+    /* Reduced height */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +59,7 @@ header {
 }
 
 header img {
-    width: 200px;
+    width: 180px;
     height: auto;
 }
 
@@ -124,6 +125,21 @@ a:hover {
     box-shadow:
         0 0 15px rgba(255, 0, 255, 0.5),
         0 0 30px rgba(255, 0, 255, 0.3);
+}
+
+.btn.lock {
+    background: transparent;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    cursor: not-allowed;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.btn.lock:hover {
+    background: transparent;
+    border-color: #ff0000;
+    color: #ff3333;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
 }
 
 /* Welcome Section */
